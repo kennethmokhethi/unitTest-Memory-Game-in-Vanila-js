@@ -4,7 +4,7 @@ memory slot is a game wherein you match a series of pictures to their similar ot
  */
 
 // Storing all the images in an array
-const slots = document.querySelectorAll(".memory-slot");
+const slots = global.window.querySelectorAll(".memory-slot");
 
 // Declaring variable that wil be used
 let cardFlipped = false;
@@ -75,3 +75,11 @@ function resetCards() {
 })();
 // Calling the function that flips cardr afer a click
 slots.forEach(slots => slots.addEventListener("click", flipCards));
+
+module.export = {
+  flipCards,
+  checkEquality,
+  disableClick,
+  unflipCard,
+  resetCards
+};

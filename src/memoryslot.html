@@ -71,7 +71,14 @@
         <img class="back" src="images/funnyface.jpeg" alt="emoji" />
       </div>
     </section>
-
+    <script>
+      class Global {
+        constructor() {
+          this.document = document;
+        }
+      }
+      let global = new Global();
+    </script>
     <script src="memoryslot.js"></script>
   </body>
 </html>
