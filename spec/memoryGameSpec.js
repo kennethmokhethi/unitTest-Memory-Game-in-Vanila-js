@@ -2,7 +2,7 @@ describe("memory game tests", () => {
   const jsdom = require("jsdom");
   const { JSDOM } = jsdom;
 
-  // using jsDom's VirtualConsole method
+  // using jsDoms VirtualConsole method
   // and telling it to use the default nodejs console.
   const virtualConsole = new jsdom.VirtualConsole();
   virtualConsole.sendTo(console);
