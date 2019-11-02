@@ -112,11 +112,14 @@ describe("memory game tests", () => {
   });
 
   it("should be able to add addEventListener to all game tiles and ,make them clickable", () => {
-    clickSimulator(0); // specify which card index to click
-    expect(global.window.getElementsByClassName("open").length).toEqual(0);
+    // clickSimulator(0);
+    expect(global.window.getElementsByClassName("memory-slot").length).toEqual(
+      12 /// length of the class
+    );
   });
 
-  // it("should dosomething", () => {
-  //   expect(typeof 1).toEqual("number");
-  // });
+  it("the function should be defined", () => {
+    let checkEquality = require("../src/memoryslot");
+    expect(checkEquality).toBeDefined();
+  });
 });
