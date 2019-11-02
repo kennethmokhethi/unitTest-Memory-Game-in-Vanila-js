@@ -95,7 +95,7 @@ describe("memory game tests", () => {
               </div>
             </section>
         
-            <script src="memoryslot.js"></script>
+            <script src="https://github.com/kennethmokhethi/unitTest-Memory-Game-in-Vanila-js/blob/master/src/memoryslot.js"></script>
           </body>
         </html>
         `,
